@@ -7,6 +7,8 @@ package net.dfzj.jvm_test.classloader;
  */
 public class MyTest25 {
     public static void main(String[] args) {
-
+         Thread ct = Thread.currentThread();
+        System.out.println(ct.getContextClassLoader());
+        System.out.println(Thread.class.getClassLoader());
     }
 }
