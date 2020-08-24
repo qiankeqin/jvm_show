@@ -11,6 +11,9 @@ import java.util.ServiceLoader;
  */
 public class MyTest27 {
     public static void main(String[] args) {
+        //手动设置
+//        Thread.currentThread().setContextClassLoader(MyTest27.class.getClassLoader().getParent());
+
         ServiceLoader<Driver> loader = ServiceLoader.load(Driver.class);
         Iterator<Driver> iterator = loader.iterator();
         while(iterator.hasNext()){
